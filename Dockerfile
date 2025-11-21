@@ -1,6 +1,6 @@
 #FROM ghcr.io/home-assistant/amd64-base-debian:bookworm
 # Multistage build
-FROM ghcr.io/hassio-addons/debian-base:7.6.2 as build
+FROM ghcr.io/hassio-addons/debian-base/amd64:9.0.0 AS build
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
@@ -52,7 +52,7 @@ RUN mkdir results \
     && mv hl2240lpr-2.1.0-1.amd64.deb ./results
 
 # HAOS IMAGE
-FROM ghcr.io/hassio-addons/debian-base:7.6.2
+FROM ghcr.io/hassio-addons/debian-base/amd64:9.0.0 AS image
 
 LABEL io.hass.version="1.5" io.hass.type="addon" io.hass.arch="amd64"
 
@@ -81,7 +81,7 @@ RUN apt update \
         # printer-driver-foo2zjs \
         # printer-driver-hpcups \
         # printer-driver-escpr \
-        cups-pdf \
+        printer-driver-cups-pdf \
         gnupg2 \
         lsb-release \
         nano \
