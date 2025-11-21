@@ -1,8 +1,10 @@
-## v1.7
+# Changelog
 
-- Fix the issue with "ulimit" size and permissions
-  
-## v1.5
+## [1.1.0] - 2025-02-20
 
-- Update Debian Base to 7.6.2
-- Add HP drivers (printer-driver-hpcups)
+- Update for HAOS 2025.11.2
+
+## [1.0.0] - 2025-02-20
+
+- Initial release
+

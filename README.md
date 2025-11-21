@@ -1,3 +1,7 @@
+# homeassistant addon cups airprint, forked and modified by Almidar. 
+Many thanks to Zajac.
+
+Original Text:
 # homeassistant addon cups airprint
 CUPS addon with working Avahi in reflector mode 
 

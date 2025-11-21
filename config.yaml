@@ -1,10 +1,11 @@
 name: CUPS
-version: "1.7"
+version: "1.1.0"
+url: https://github.com/almidar/homeassistant-addons/
+image: docker.io/mluhmann/haos-cups
 slug: cupsik
-description: A CUPS print server with working AirPrint
+description: A CUPS print server with working AirPrint for Brother HL2240
 arch:
   - amd64
-  - aarch64
 usb: true
 init: false
 homeassistant_api: true
